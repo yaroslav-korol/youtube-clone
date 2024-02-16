@@ -1,0 +1,45 @@
+/* General styles */
+/* * {
+    font-size: clamp(0.5rem, 1.5vw, 2rem);
+} */
+
+body {
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+    padding-left: 240px;
+}
+
+/* Add space to body for wider sidebar on bigger screens */
+@media (width < 1315px) {
+    body {
+        padding-left: 96px;
+    }
+}
+
+@media (width >= 1315px) {
+    body {
+        padding-left: 240px;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Sidebar toggler checkbox */
+#sidebar-toggler {
+    display: none;
+}

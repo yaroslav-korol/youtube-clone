@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500;700&family=Ubuntu:ital@1&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="https://www.youtube.com/s/desktop/6148f390/img/favicon_96x96.png" sizes="96x96">
+
+  <title>Youtube Clone</title>
+
+  <meta name="description"
+    content="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.">
+  <meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/video.css">
+
+  <script src="scripts/script.js"></script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="left-section">
+
+      <label for="sidebar-toggler">
+        <img class="menu-icon" src="images/icons/hamburger-menu.svg" alt="hamburger-menu">
+      </label>
+
+      <a href="https://www.youtube.com/">
+        <img class="youtube-logo" src="images/icons/youtube-logo.svg" alt="youtube-logo">
+      </a>
+    </div>
+    <div class="middle-section middle-section-show">
+      <input type="text" placeholder="Search" class="search-bar">
+      <button class="search-btn tooltip-box">
+        <img class="search-icon" src="images/icons/search.svg" alt="search button">
+        <span class="tooltip">Search</span>
+      </button>
+      <button class="voice-search-btn tooltip-box">
+        <img class="voice-search-icon" src="images/icons/voice-search-icon.svg" alt="voice search button">
+        <span class="tooltip">Search with your voice</span>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="tooltip-box">
+        <img class="upload-icon" src="images/icons/upload.svg" alt="upload button">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="tooltip-box">
+        <img class="apps-menu-icon" src="images/icons/youtube-apps.svg" alt="youtube apps menu button">
+        <div class="tooltip">YouTube apps</div>
+      </div>
+      <div class="notifications-box tooltip-box">
+        <img class="notifications-icon" src="images/icons/notifications.svg" alt="notifications button">
+        <div class="notifications-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="current-profile-picture" src="images/channel-pictures/my_channel.jpg" alt="current profile picture">
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <input type="checkbox" id="sidebar-toggler">
+  <nav class="sidebar sidebar-compact">
+    <a href="https://www.youtube.com/">
+      <div class="sidebar-option-box">
+        <img src="images/icons/youtube-home.svg" alt="home button">
+        <div>Home</div>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/shorts">
+      <div class="sidebar-option-box">
+        <img src="images/icons/youtube-shorts.svg" alt="explore button">
+        <div>Shorts</div>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/feed/subscriptions">
+      <div class="sidebar-option-box">
+        <img src="images/icons/subscriptions.svg" alt="subscriptions button">
+        <div>Subscriptions</div>
+      </div>
+    </a>
+
+    <a href="https://music.youtube.com/">
+      <div class="sidebar-option-box">
+        <img src="images/icons/youtube-music.svg" alt="YouTube Music button">
+        <div>YouTube Music</div>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/feed/you">
+      <div class="sidebar-option-box">
+        <img src="images/icons/library.svg" alt="Library button">
+        <div>You</div>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/feed/downloads">
+      <div class="sidebar-option-box">
+        <img src="images/icons/download-1.svg" alt="Downloads button">
+        <div>Downloads</div>
+      </div>
+    </a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <!-- Video boxes -->
+    <section class="video-box-grid">
+
+      <!-- Video box 1 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-1.webp" alt="marques-and-sundar">
+          </a>
+          <div class="video-length">14:20</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@mkbhd">
+              <img class="profile-picture" src="images/channel-pictures/channel-1.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-1.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Marques Brownlee
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    15M subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@mkbhd">
+                Marques Brownlee &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              3.4M views &centerdot; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video box 2 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=U2Qp5pL3ovA&t=1s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp" alt="timothee-chalamet">
+          </a>
+          <div class="video-length">2:40</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@WarnerBrosPictures">
+              <img class="profile-picture" src="images/channel-pictures/channel-2.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-2.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Warner Bros. Pictures
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    11.3M subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=U2Qp5pL3ovA&t=1s">
+                Dune: Part Two | Official Trailer 3
+              </a>
+            </h4>
+            <div class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@WarnerBrosPictures">
+                Warner Bros. Pictures &check;
+              </a>
+            </div>
+            <p class="video-stats">
+              7.6M views &centerdot; 4 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video box 3 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=p1QU3kLFPdg">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="simon-bao">
+          </a>
+          <div class="video-length">29:37</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@SuperSimpleDev">
+              <img class="profile-picture" src="images/channel-pictures/channel-3.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-3.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    SuperSimpleDev
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    371K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=p1QU3kLFPdg">
+                How to put an HTML website online (on the Internet)
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@SuperSimpleDev">
+                SuperSimpleDev &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              1.1M views &centerdot; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video box 4 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=3elGSZSWTbM&t=1s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-4.webp" alt="kevin-powell">
+          </a>
+          <div class="video-length">18:51</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@KevinPowell">
+              <img class="profile-picture" src="images/channel-pictures/channel-4.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-4.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Kevin Powell
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    868K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=3elGSZSWTbM&t=1s">
+                Flexbox or grid - How to decide?
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@KevinPowell">
+                Kevin Powell &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              642K views &centerdot; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 5 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=vunaSc37B5o&t=1s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp" alt="viktor-turskyi">
+          </a>
+          <div class="video-length">7:27</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@AboutProgramming">
+              <img class="profile-picture" src="images/channel-pictures/channel-5.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-5.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Віктор Турський про програмування
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    18.5K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=vunaSc37B5o&t=1s">
+                Навіщо глибоко розбиратися в речах й як менше забувати те, що вивчили?
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@AboutProgramming">
+                Віктор Турський про програмування
+              </a>
+            </p>
+            <p class="video-stats">
+              6.5K views &centerdot; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 6 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=VHHT6W-N0ak&t=4s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-6.webp" alt="linus-torvalds">
+          </a>
+          <div class="video-length">5:05</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@mastery_learning">
+              <img class="profile-picture" src="images/channel-pictures/channel-6.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-6.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Mastery Learning
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    1.85K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=VHHT6W-N0ak&t=4s">
+                Torvalds Speaks: Impact of Artificial Intelligence on Programming
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@mastery_learning">
+                Mastery Learning
+              </a>
+            </p>
+            <p class="video-stats">
+              70,478 views &centerdot; 23 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 7 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=3595IuY0kgE">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-7.webp" alt="emma-myers-in-seul">
+          </a>
+          <div class="video-length">3:58</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@Samsung">
+              <img class="profile-picture" src="images/channel-pictures/channel-7.jpg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-7.jpg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Samsung
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    6.7M subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=nEDfYK5YPvw&t=1s">
+                Galaxy S24 Ultra: Emma Myers in Seoul - Filmed &#x23;withGalaxy &VerticalLine; Samsung
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@Samsung">
+                Samsung &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              103K views &centerdot; 1 day ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 8 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=UxRcQSGHAG0&t=269s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-8.webp" alt="stalker-in-prypiat">
+          </a>
+          <div class="video-length">17:14</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@tribanki">
+              <img class="profile-picture" src="images/channel-pictures/channel-8.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-8.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Гордієнко
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    4.4K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=UxRcQSGHAG0&t=269s">
+                ФЕНОМЕН ЕСТЕТИКИ STALKER
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@tribanki">
+                Гордієнко
+              </a>
+            </p>
+            <p class="video-stats">
+              21K views &centerdot; 6 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 9 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=9oAPRhSiniw&t=20s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-9.webp" alt="">
+          </a>
+          <div class="video-length">25:20</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@evgenko_">
+              <img class="profile-picture" src="images/channel-pictures/channel-9.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-9.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    EVGENKO
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    35.4K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=9oAPRhSiniw&t=20s">
+                Річки України. Стохід. Загублений у часі
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@evgenko_">
+                EVGENKO
+              </a>
+            </p>
+            <p class="video-stats">
+              68K views &centerdot; 2 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 10 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=G2BHoeyg34w">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-10.webp" alt="Mountains in New Zeland">
+          </a>
+          <div class="video-length">16:56</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@kraigadams">
+              <img class="profile-picture" src="images/channel-pictures/channel-10.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-10.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Kraig Adams
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    752K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=G2BHoeyg34w">
+                Hiking the Routeburn Great Walk in New Zealand
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@kraigadams">
+                Kraig Adams &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              1.1M views &centerdot; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 11 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=cwtpLIWylAw&t=1s">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-11.webp" alt="stalker-in-prypiat">
+          </a>
+          <div class="video-length">2:27:41</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/cs50">
+              <img class="profile-picture" src="images/channel-pictures/channel-11.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-11.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    CS50
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    1.72M subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=cwtpLIWylAw&t=1s">
+                CS50x 2024 - Lecture 1 - C
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/cs50">
+                CS50 &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              124K views &centerdot; 4 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Video box 12 -->
+      <div class="video-preview">
+        <div class="preview-image-box">
+          <a href="https://www.youtube.com/watch?v=lTyNwBkZwmw">
+            <img class="thumbnail" src="images/thumbnails/thumbnail-12.webp" alt="">
+          </a>
+          <div class="video-length">25:50</div>
+        </div>
+
+        <div class="preview-info">
+          <div class="profile-picture-box">
+            <a href="https://www.youtube.com/@Antonsomewhere">
+              <img class="profile-picture" src="images/channel-pictures/channel-12.jpeg" alt="profile-picture">
+              <!-- Tooltip -->
+              <div class="profile-info-tooltip">
+                <div class="tooltip-picture-box">
+                  <img class="tooltip-profile-picture" src="images/channel-pictures/channel-12.jpeg"
+                    alt="profile-picture">
+                </div>
+                <div>
+                  <p class="tooltip-author-name">
+                    Anton somewhere
+                  </p>
+                  <p class="tooltip-subscribers-cnt">
+                    522K subscribers
+                  </p>
+                </div>
+              </div>
+              <!-- End of tooltip -->
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h4 class="video-title">
+              <a class="video-link" href="https://www.youtube.com/watch?v=lTyNwBkZwmw">
+                Silent hiking in the Ukrainian Carpathians
+              </a>
+            </h4>
+            <p class="video-author-name">
+              <a class="video-author-link" href="https://www.youtube.com/@Antonsomewhere">
+                Anton somewhere &check;
+              </a>
+            </p>
+            <p class="video-stats">
+              32K views &centerdot; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>

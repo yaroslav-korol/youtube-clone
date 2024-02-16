@@ -1,0 +1,79 @@
+/* Compact sidebar */
+.sidebar-compact {
+  background-color: white;
+  /* opacity: 1; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 56px;
+  z-index: 200;
+  padding-top: 5px;
+  width: 72px;
+
+  /* Menu element */
+  .sidebar-option-box {
+    display: flex;
+    cursor: pointer;
+    height: 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 24px;
+      margin-bottom: 4px;
+    }
+
+    div {
+      font-size: 10px;
+    }
+  }
+
+  .sidebar-option-box:hover {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+  }
+}
+
+/* Big sidebar */
+.sidebar-wide {
+  background-color: white;
+  /* opacity: 1; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 56px;
+  z-index: 200;
+  padding-top: 5px;
+  width: 216px;
+
+  /* Menu element */
+  .sidebar-option-box {
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 12px;
+    padding-left: 12px;
+    display: flex;
+    cursor: pointer;
+
+    img {
+      height: 24px;
+      margin-right: 24px;
+    }
+
+    div {
+      font-size: 14px;
+    }
+  }
+
+  .sidebar-option-box:hover {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+  }
+}
+
+/* Hide sidebar on small screens */
+.sidebar-hide {
+  display: none;
+}

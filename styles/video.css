@@ -1,0 +1,145 @@
+/* Main page view */
+.video-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Resize video box according to screen size*/
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+/* Resize video box according to screen size*/
+/* @media (width < 750px) {
+    .video-box-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (750px < width < 1000px) {
+    .video-box-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (width > 1000px) {
+    .video-box-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} */
+
+/* Responsive font sizes */
+@media (width <= 1000px) {
+    .video-title,
+    .tooltip-author-name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .video-length,
+    .video-stats,
+    .video-author-link,
+    .tooltip-subscribers-cnt {
+        font-size: 12px;
+    }
+}
+
+@media (width > 1000px) {
+    .video-title,
+    .tooltip-author-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .video-length,
+    .video-stats,
+    .video-author-link,
+    .tooltip-subscribers-cnt {
+        font-size: 14px;
+    }
+}
+
+/* Main boxes */
+.preview-image-box {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.video-length {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+/* Preview info */
+.preview-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+/* Profile picture */
+.profile-picture-box {
+    position: relative;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+/* TOOLTIP */
+.profile-info-tooltip {
+    background-color: white;
+    position: absolute;
+    bottom: -36px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-profile-picture {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.tooltip-author-name {
+    font-weight: 700;
+}
+
+.profile-picture-box a:hover {
+        .profile-info-tooltip {
+            opacity: 1;
+        }
+}
+
+/* Video info */
+.video-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.video-stats,
+.video-author-link,
+.tooltip-subscribers-cnt 
+{
+    color: rgb(96, 96, 96);
+}
+
+.video-author-name {
+    margin-bottom: 4px;
+}
